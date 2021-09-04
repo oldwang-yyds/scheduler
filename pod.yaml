@@ -1,0 +1,12 @@
+kind apiVersion: v1
+kind: Pod
+metadata:
+  name: "test"
+  namespace: default
+  labels:
+    app: "test"
+    want: "you"
+spec:
+  containers:
+  - name: test
+    image: "debian-slim:latest"
